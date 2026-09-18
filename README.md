@@ -1,4 +1,4 @@
-# 🛒 File Organization Supermarket System
+# File Organization Supermarket System
 
 A C++ console-based Supermarket Management System that demonstrates file organization, indexing, record management, and free-space management using binary files.
 
@@ -9,7 +9,7 @@ The system manages two types of records:
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 
 - [Overview](#-overview)
 - [Main Menu](#-main-menu)
@@ -35,7 +35,7 @@ The system manages two types of records:
 
 ---
 
-## 📖 Overview
+## Overview
 
 The **File Organization Supermarket System** is a C++ console application for managing customer and product records.
 
@@ -48,7 +48,7 @@ The system also manages deleted spaces inside the data files and supports two fr
 
 ---
 
-## 🏠 Main Menu
+## Main Menu
 
 When the program starts, the user can choose between the two available systems:
 
@@ -61,7 +61,7 @@ Enter Choice:
 
 ---
 
-# 👤 Customer System
+# Customer System
 
 The Customer System manages customer records.
 
@@ -109,7 +109,7 @@ The customer name must contain at least 5 characters.
 
 ---
 
-# 📦 Product System
+# Product System
 
 The Product System manages product records.
 
@@ -156,7 +156,7 @@ The product name must contain at least 5 characters.
 
 ---
 
-# 💾 File Storage
+# File Storage
 
 The system uses binary file operations for storing records.
 
@@ -173,7 +173,7 @@ The records are stored using file read/write operations, and file offsets are us
 
 ---
 
-# 📏 Record Structure
+# Record Structure
 
 The Customer and Product records contain variable-length fields.
 
@@ -211,7 +211,7 @@ The `calcLength()` function calculates the record size used by the free-space ma
 
 ---
 
-# 🔑 Primary Index
+# Primary Index
 
 The system uses a Primary Index based on the record ID.
 
@@ -242,7 +242,7 @@ When searching for an ID, the system uses **binary search** on the Primary Index
 
 ---
 
-# 🔤 Secondary Index
+# Secondary Index
 
 The system also uses a Secondary Index for searching by name.
 
@@ -317,7 +317,7 @@ Read Record(s)
 
 ---
 
-# 🔄 CRUD Operations
+# CRUD Operations
 
 The system supports the main record-management operations.
 
@@ -358,7 +358,7 @@ The indexes are used to locate the records.
 
 ---
 
-# ✏️ Update
+# Update
 
 When a record is updated, the system compares the old record size with the new record size.
 
@@ -388,7 +388,7 @@ The corresponding indexes are also updated.
 
 ---
 
-# 🗑️ Delete
+# Delete
 
 When a record is deleted, the system:
 
@@ -404,7 +404,7 @@ The deleted space can then be reused by a future insertion.
 
 ---
 
-# ♻️ Free Space Management
+# Free Space Management
 
 The system maintains a list of deleted spaces inside the data file.
 
@@ -433,7 +433,7 @@ When a new record is inserted, the system checks this list before adding the rec
 
 ---
 
-# 🚀 First Fit
+# First Fit
 
 The project implements a **First Fit** strategy.
 
@@ -468,7 +468,7 @@ The unused part of the selected space is filled with padding.
 
 ---
 
-# 🎯 Best Fit
+# Best Fit
 
 The project also implements a **Best Fit** strategy.
 
@@ -503,7 +503,7 @@ The unused part of the selected space is filled with padding.
 
 ---
 
-# 🔁 First Fit vs Best Fit
+# First Fit vs Best Fit
 
 | Strategy | How it chooses a free space |
 |---|---|
@@ -531,7 +531,7 @@ Both strategies are implemented in the project.
 
 ---
 
-# 📌 Current Strategy
+# Current Strategy
 
 Both Customer and Product implementations contain:
 
@@ -552,7 +552,7 @@ Therefore, **Best Fit is the currently active insertion strategy**, while First 
 
 ---
 
-# ⚙️ File Initialization
+# File Initialization
 
 The project contains an `initFile()` function in `main.cpp`.
 
@@ -576,7 +576,7 @@ This means the user does not need to manually create the Customer and Product da
 
 ---
 
-# 💽 Index Persistence
+# Index Persistence
 
 The system stores the indexes in separate files.
 
@@ -596,7 +596,7 @@ This allows the index information to be preserved between program executions.
 
 ---
 
-# 🧪 Example
+# Example
 
 ## 1. Start the Program
 
@@ -709,7 +709,7 @@ The system reuses that space instead of automatically appending the record to th
 
 ---
 
-# ▶️ How to Run
+# How to Run
 
 ## Requirements
 
@@ -735,7 +735,7 @@ The required data files are created automatically when needed.
 
 ---
 
-# 📂 Files Used
+# Files Used
 
 The project works with the following files:
 
@@ -781,7 +781,7 @@ The index files are written in binary mode by the program.
 
 ---
 
-# 🛠️ Technologies
+# Technologies
 
 ## Language
 
@@ -804,7 +804,7 @@ The index files are written in binary mode by the program.
 
 ---
 
-# 🎓 Learning Outcomes
+# Learning Outcomes
 
 Through this project, the following concepts are applied practically:
 
@@ -826,7 +826,7 @@ Through this project, the following concepts are applied practically:
 
 ---
 
-# 📌 Conclusion
+# Conclusion
 
 The **File Organization Supermarket System** is a C++ application that combines supermarket record management with file organization concepts.
 
